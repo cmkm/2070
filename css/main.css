@@ -77,17 +77,56 @@ body {
     background: #efefef;
 }
 
+.hero {
+    height: 480px;
+    background: url('https://raw.githubusercontent.com/cmkm/2070/gh-pages/img/header.jpg');
+    background-size: cover;
+}
+
+    .hero h1 {
+        color: #fff;
+        text-shadow: 0 1px 1px #000;
+        text-align: center;
+        padding-top: 230px;
+        margin: 0;
+    }
+
 .footer-container {
-    background: #666;
+    background: #21182c;
+}
+
+.main {
+    display: none;
 }
 
 .main aside {
-    background: #d23a36;
+    background: #d23a56;
 }
 
 .title {
     color: white;
 }
+
+.slice {
+    text-align: center;
+}
+
+.our-services {
+    background-color: #dddddd;
+}
+
+.our-team {
+    background-color: #bab8c3; 
+}
+
+.our-policies {
+    background-color: #b7afb3;
+}
+
+.contact-us {
+    background-color: #c9ccde;
+}
+
 
 /* ==============
     MOBILE: Menu
@@ -100,8 +139,8 @@ nav ul {
 
 nav a {
     display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
+    /*margin-bottom: 10px;*/
+    padding: 5px;
 
     text-align: center;
     text-decoration: none;
@@ -180,9 +219,10 @@ nav a:hover {
 
     nav a {
         float: left;
-        width: 27%;
+        width: 15%;
         margin: 0 1.7%;
         padding: 25px 2%;
+        padding-top: 50px;
         margin-bottom: 0;
     }
 
