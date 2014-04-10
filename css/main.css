@@ -1,5 +1,6 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/*@import url(http://weloveiconfonts.com/api/?family=fontawesome);*/
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
 html,
 button,
@@ -84,7 +85,7 @@ body {
         color: #fff;
         text-shadow: 0 1px 1px #000;
         text-align: center;
-        padding-top: 230px;
+        padding-top: 200px;
         margin: 0;
         line-height: 2em;
     }
@@ -121,21 +122,38 @@ body {
     background-color: #ddd;
 }
 
+.button {
+    display: inline-block;
+    background-color: #e60026;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+}
+
+    .button:hover {
+        background-color: #ff3455;
+    }
+
 [class*="i-"] {
     font-family: "FontAwesome", sans-serif;
     font-size: 10em;
 }
 
-    .i-recording {
-        content: '\f130';
+    .i-recording:before {
+        content: "\f130";
     }
 
-    .i-mastering {
-        content: '\f025';
+    .i-mastering:before {
+        content: "\f025";
     }
 
-    .i-distribution {
-        content: '\f0d1';
+    .i-distribution:before {
+        content: "\f0d1";
     }
 
 /* ==============
@@ -174,24 +192,20 @@ nav a:hover {
     font-size: 2em;
 }
 
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
 .footer-container footer {
     color: white;
     padding: 20px 0;
 }
 
-.our-team ul {
+.our-team ul, 
+.our-services ul {
     list-style: none;
     padding-left: 0;
 }
 
 .our-team li,
 .our-services li {
-    display: inline-block;
+    display: block;
     vertical-align: top;
 }
 
@@ -201,14 +215,19 @@ nav a:hover {
         height: auto;
     }
 
+    .our-services li span {
+        line-height: 1em;
+    }
 
     .our-team li img, 
     .our-team li span, 
+    .our-services li span,
     .our-team li em {
         display: block;
     }
 
-    .our-team li span {
+    .our-team li span,
+    .our-services li span:nth-child(2) {
         font-weight: bold;
         text-transform: uppercase;
         margin-top: 0.8em;
@@ -218,6 +237,7 @@ nav a:hover {
     padding-top: 20px;
 }
 
+/* intermediate: 480px + */
 @media only screen and (min-width: 480px) {
 
     nav a {
@@ -241,7 +261,8 @@ nav a:hover {
         padding: 2em 0 2em 0;
     }
 
-        .our-team li {
+        .our-team li, 
+        .our-services li {
             display: inline-block;
             width: 175px;
             margin: 0.8em;
