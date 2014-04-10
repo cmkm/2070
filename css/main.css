@@ -56,11 +56,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
 body {
     font: 16px/26px "Open Sans", sans-serif;
 }
@@ -71,11 +66,12 @@ body {
 }
 
 .header-container {
+    background: #fff;
 }
 
-.header-container {
-    background: #efefef;
-}
+    .header-container a {
+        color: #000;
+    }
 
 .hero {
     height: 480px;
@@ -89,19 +85,16 @@ body {
         text-align: center;
         padding-top: 230px;
         margin: 0;
+        line-height: 2em;
     }
 
 .footer-container {
-    background: #21182c;
+    background: #333;
 }
 
-.main {
-    display: none;
-}
-
-.main aside {
-    background: #d23a56;
-}
+    .footer-container a {
+        color: #eee;
+    }
 
 .title {
     color: white;
@@ -112,7 +105,7 @@ body {
 }
 
 .our-services {
-    background-color: #dddddd;
+    background-color: #ddd;
 }
 
 .our-team {
@@ -120,11 +113,11 @@ body {
 }
 
 .our-policies {
-    background-color: #b7afb3;
+    background-color: #ccc;
 }
 
 .contact-us {
-    background-color: #c9ccde;
+    background-color: #ddd;
 }
 
 
@@ -140,19 +133,12 @@ nav ul {
 nav a {
     display: block;
     /*margin-bottom: 10px;*/
-    padding: 5px;
+    padding: 1em;
 
     text-align: center;
     text-decoration: none;
     font-weight: bold;
 
-    color: #000;
-   /* background: #e44d26; */
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
 }
 
 nav a:hover {
@@ -181,41 +167,11 @@ nav a:hover {
     padding: 20px 0;
 }
 
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
 .ie7 .title {
     padding-top: 20px;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
 @media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
 
     nav a {
         float: left;
@@ -233,6 +189,31 @@ nav a:hover {
     nav li:last-child a {
         margin-right: 0;
     }
+
+    .slice {
+        padding: 2em 0 2em 0;
+    }
+
+    .our-team ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+        .our-team li {
+            display: inline-block;
+            width: 200px;
+            margin: 0.8em;
+        }
+
+            .our-team li img, 
+            .our-team li span, 
+            .our-team li em {
+                display: block;
+            }
+
+            .our-team li img {
+                border-radius: 100px;
+            }
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -362,69 +343,3 @@ nav a:hover {
     *zoom: 1;
 }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
