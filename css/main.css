@@ -1,4 +1,5 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 html,
 button,
@@ -120,6 +121,22 @@ body {
     background-color: #ddd;
 }
 
+[class*="i-"] {
+    font-family: "FontAwesome", sans-serif;
+    font-size: 10em;
+}
+
+    .i-recording {
+        content: '\f130';
+    }
+
+    .i-mastering {
+        content: '\f025';
+    }
+
+    .i-distribution {
+        content: '\f0d1';
+    }
 
 /* ==============
     MOBILE: Menu
@@ -167,6 +184,36 @@ nav a:hover {
     padding: 20px 0;
 }
 
+.our-team ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.our-team li,
+.our-services li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+    .our-team li img {
+        border-radius: 100px;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .our-team li img, 
+    .our-team li span, 
+    .our-team li em {
+        display: block;
+    }
+
+    .our-team li span {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 0.8em;
+    }
+
 .ie7 .title {
     padding-top: 20px;
 }
@@ -194,26 +241,13 @@ nav a:hover {
         padding: 2em 0 2em 0;
     }
 
-    .our-team ul {
-        list-style: none;
-        padding-left: 0;
-    }
-
         .our-team li {
             display: inline-block;
-            width: 200px;
+            width: 175px;
             margin: 0.8em;
+            vertical-align: top;
         }
 
-            .our-team li img, 
-            .our-team li span, 
-            .our-team li em {
-                display: block;
-            }
-
-            .our-team li img {
-                border-radius: 100px;
-            }
 
 /* ========================
     INTERMEDIATE: IE Fixes
