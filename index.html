@@ -44,7 +44,7 @@
         <div class="our-services">
             <div class="wrapper clearfix slice">
 
-                <h2 name="services">Services</h2>
+                <h2 id="services">Services</h2>
 
                 <p>Our motto is <em>"Going the extra mile to keep your 
                     intellectual property secure."</em></p> 
@@ -75,7 +75,7 @@
         <div class="our-team">
             <div class="wrapper clearfix slice">
             
-                <h2 name="team">Team</h2>
+                <h2 id="team">Team</h2>
 
                 <p>Our team of knowledgeable staff keeps our infrastructure 
                 and equipment running at its best. We are always happy 
@@ -116,31 +116,28 @@
         <div class="our-policies">
             <div class="wrapper clearfix slice">
 
-                <h2 name="policies">Policies</h2>
+                <h2 id="policies">Policies</h2>
 
                 <p>Please review our Acceptable Use Policy below. (PDF)</p>
 
-                <p><a class="button" href="#">AUP</a></p>
+                <p>
+                <a class="button" target="_blank" href="https://dl.dropboxusercontent.com/u/4018111/2070/aup.pdf">AUP</a></p>
 
                 <p>We also provide the following guidelines for use of 
                 our company name and logo. (PDF)</p>
 
-                <p><a class="button" href="#">Trademark</a></p>
+                <p><a class="button" target="_blank" href="https://dl.dropboxusercontent.com/u/4018111/2070/trademark.pdf">Trademark</a></p>
             
             </div>
         </div>
 
         <div class="contact-us">
             <div class="wrapper clearfix slice">
-                <h2 name="contact">Contact</h2>
+                <h2 id="contact">Contact</h2>
 
-                <p>Get in touch with us using the form below.</p>
+                <p>Ready to take your music project to the next level? Give us a call:</p>
 
-                <form>
-
-                    ...
-
-                </form>
+                <p class="phone"> <span class="i-phone"> </span> 1-800-123-4567 </p>
             </div>
         </div>
 
@@ -148,11 +145,14 @@
             <footer class="wrapper clearfix">
                 <h3>© 2014 Horizon Music Productions, Inc.</h3>
                 <nav>
-                    <a href="#">Services</a>
-                    <a href="#">Team</a>
-                    <a href="#">Policies</a>
-                    <a href="#">Contact</a>
+                    <a href="#services">Services</a>
+                    <a href="#team">Team</a>
+                    <a href="#policies">Policies</a>
+                    <a href="#contact">Contact</a>
                 </nav>
+
+
+                <a class="toplink" href="#top">Back to Top</a>
             </footer>
         </div>
 
@@ -161,14 +161,5 @@
 
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
     </body>
 </html>

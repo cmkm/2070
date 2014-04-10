@@ -141,7 +141,6 @@ body {
 
 [class*="i-"] {
     font-family: "FontAwesome", sans-serif;
-    font-size: 10em;
 }
 
     .i-recording:before {
@@ -154,6 +153,10 @@ body {
 
     .i-distribution:before {
         content: "\f0d1";
+    }
+
+    .i-phone:before {
+        content: "\f095";
     }
 
 /* ==============
@@ -219,6 +222,13 @@ nav a:hover {
         line-height: 1em;
     }
 
+    .our-services span[class*="i-"] {
+        font-family: "FontAwesome", sans-serif;
+        font-size: 10em;
+    }
+
+
+
     .our-team li img, 
     .our-team li span, 
     .our-services li span,
@@ -231,6 +241,12 @@ nav a:hover {
         font-weight: bold;
         text-transform: uppercase;
         margin-top: 0.8em;
+    }
+
+    .phone {
+        line-height: 1em;
+        font-size: 5em;
+        margin-top: 0;
     }
 
 .ie7 .title {
